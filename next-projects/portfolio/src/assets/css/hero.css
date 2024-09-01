@@ -1,0 +1,20 @@
+.home-section {
+    overflow: hidden;
+    padding-top: 150px;
+    position: relative;
+    z-index: 1;
+}
+.home-section .hs-text-box h6 span {
+    background: rgba(7, 136, 255, .2);
+    background: rgba(var(--px-theme-rgb), .2);
+    border-radius: 4px;
+    color: #fff;
+    /* color: var(--px-white); */
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    line-height: 20px;
+    padding: 5px 12px;
+    text-transform: uppercase;
+}

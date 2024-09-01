@@ -1,0 +1,41 @@
+.step{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: initial;
+    z-index: 1;
+}
+.step.active{
+    background-color: rgb(69, 210, 69);
+}
+.line.complete{
+    background-color: rgb(69, 210, 69);
+}
+.outer .cont:last-child section{
+    margin-right: -100px;
+}
+.cont{
+    position: relative;
+}
+.line{
+    height: 4px;
+    width: 100%;
+    background-color: rgb(183, 182, 185);
+    position: absolute;
+    top: 50%;
+}
+.btn{
+    padding: 4px 16px;
+    background-color: rgb(89, 87, 91);
+    color: white;
+}
+.btn:hover{
+    background-color: rgb(34, 32, 35);
+    color: white;
+}
+.btn:disabled{
+    cursor: not-allowed;
+}
