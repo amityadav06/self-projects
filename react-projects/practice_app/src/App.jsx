@@ -3,7 +3,7 @@ import Container from './components/hoc/Container'
 import { Link } from 'react-router-dom'
 import ValidateFrom from './components/form-validation/pract'
 import Copy from './components/stepper/Copy'
-import ModalContainer from './components/Modal/ModalContainer'
+import PracticeComponent from './components/practice-component/PracticeComponent'
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
         <Copy />
         {/* <ValidateFrom /> */}
         {/* <ToggleEye /> */}
-        {/* <ModalContainer /> */}
+        <PracticeComponent />
       </div>
     </div>
   )
