@@ -17,8 +17,7 @@ function App() {
   return (
     <>
       <div>
-        <Header />
-          {/* <img src={viteLogo} className="logo" alt="Vite logo" /> */}
+          <Header />
           <img className='invisible' src='/' alt='/' /> 
           <main>
             <Hero />

@@ -28,3 +28,15 @@ const Header = () => {
 }
 
 export default Header
+/* 
+Test Link for Flipkart SDE-2 Referral: https://bit.ly/4e5h8xC
+
+- Syllabus: Coding (DSA)
+
+- Deadline: 5th September, 11:59 pm
+
+- Top 3 would be mailed about the results and referral further process on coming Monday.
+
+Do join the Community of like-minded peers for updates, to discuss and reach out for queries: https://chat.whatsapp.com/I72sqJjtOEqD7QpCndHsYH
+
+Website to check out our upcoming advanced software development course: https://bit.ly/ns-asde */

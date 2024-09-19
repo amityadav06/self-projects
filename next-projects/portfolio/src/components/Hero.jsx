@@ -12,9 +12,9 @@ const Hero = () => {
                 <div className="lg:w-1/2">
                     <div className="hs-text-box">
                         <h6 data-aos="fade-up" data-aos-duration="1200" className="aos-init aos-animate"><span>Jenna Ortega</span></h6>
-                        <h1 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100" className="aos-init aos-animate">Hay! I’m Jenna</h1>
-                        <h2 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" className="aos-init aos-animate"><span className="index-module_type__E-SaG">I'm a Developer <ExampleComponent /> </span></h2>
-                        <p className="text aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.</p>
+                        <h1 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100" className="aos-init aos-animate">Hay! I’m Amit</h1>
+                        <h2 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" className="aos-init aos-animate"><span className="index-module_type__E-SaG">I'm a  <ExampleComponent /> </span></h2>
+                        <p className="text aos-init aos-animate text-white" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.</p>
                         <div className="btn-bar d-flex align-items-sm-center flex-column flex-sm-row aos-init aos-animate" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
                             <a className="px-btn">
                                 <span>Get in touch</span> 
@@ -44,10 +44,12 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-                <div className="lg:w-1/2">
+                <div className="lg:w-1/2 relative">
                     <div className="hs-banner"><img src="https://validthemes.net/site-template/antux/assets/img/illustration/1.png" alt="Admin" /></div>
+                    <img className='absolute top-0 right-0' src="/effect-3.svg" alt="img" />
+                    <img className='absolute top-0 right-20 ' src="/effect-3.svg" alt="img" />
+                    <img className='absolute top-40 right-0 ' src="/effect-3.svg" alt="img" />
                 </div>
-                <img src="/effect-3.svg" alt="img" />
             </div>
         </div>
     </section>

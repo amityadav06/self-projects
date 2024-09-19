@@ -18,3 +18,29 @@
     padding: 5px 12px;
     text-transform: uppercase;
 }
+.home-section .hs-text-box h1 {
+    color: #fff;
+    color: var(--px-white);
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.home-section .hs-text-box h2 {
+    color: #0788ff;
+    /* color: var(--px-theme); */
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+}
+@media (max-width: 767px) {
+    .home-section .hs-text-box h1 {
+        font-size: 38px;
+    }
+}
+@media (max-width: 1200px) {
+    .home-section .hs-text-box h2 {
+        font-size: 45px;
+        margin: 0 0 20px;
+    }
+}

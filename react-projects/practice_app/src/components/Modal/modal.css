@@ -1,0 +1,31 @@
+button{
+    cursor: pointer;
+}
+.modal-overlay{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgb(209, 207, 207);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.modal-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal{
+    background-color: antiquewhite;
+    height: 400px;
+    width: 400px;
+}
