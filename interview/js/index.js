@@ -1,127 +1,145 @@
-// let a=5;
-// let b =10;
-// if(a=3){
-// console.log("condition true");
-// }else{
-// console.log("condition false");
+// Yashvant Revandkar
+// 10:14 AM
+// hoistedFunction(); 
+
+// const hoistedFunction = function (){ 
+//   console.log(" Hello world! ");
 // }
+// Yashvant Revandkar
+// 10:16 AM
+console.log("1");
 
-let a = 1;
-let b = 1;
-let c = 1;
-if(a === b === c) {
-    console.log('true');
-}else{
-    console.log('false');
-}
+setTimeout(() => {
+  console.log("2");
+}, 10);
+
+setTimeout(() => {
+  console.log("3");
+}, 0);
+
+setTimeout(() => {
+  console.log("4");
+});
+
+Promise.resolve().then(() => {
+  console.log("5");
+}).then(() => {
+  console.log("6");
+});
+
+console.log("7");
+
+//1 7 5 6 4 3 2 
+
+const a = {
+    name: `Amit`
+    }
+    
+    const b = {
+    name: `Amit`
+    }
+    
+    console.log(a==b) // false
+    console.log(a===b) // 
 
 
-// =======================================================================================
-// how can we create custom html tags
-// =======================================================================================
+    const calculate = () =>  {
+        console.log(this);
+    }
 
-/* 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Element Example</title>
-</head>
-<body>
-    <!-- Custom element in use -->
-    <my-greeting></my-greeting>
 
-    <script>
-        // Define a class for the custom element
-        class MyGreeting extends HTMLElement {
-            constructor() {
-                super();
-                // Create a shadow root
-                this.attachShadow({ mode: 'open' });
-                // Add some content to the shadow DOM
-                this.shadowRoot.innerHTML = `<p>Hello, world!</p>`;
-            }
+
+
+
+
+
+
+
+
+
+    const obj = {
+        // name: ‘Amit’,
+        sing() {
+        console.log('a',this);
+        var anotherfunc = function() {
+            console.log('b', this)   
         }
+        anotherfunc()
+        }
+    }
+    
+    obj.sing()
 
-        // Register the custom element
-        customElements.define('my-greeting', MyGreeting);
-    </script>
-</body>
-</html>
-watch video for details - https://youtu.be/j0qG-afD244?si=gZhxbGajLZXQ2shu
-*/
-// =======================================================================================
-// csr vs ssr
-// =======================================================================================
-
-
-// =======================================================================================
-// if img tag is inline element then how can we give height, padding, margin to it?
-// =======================================================================================
-/* 
-11
-
-an img is an inline replaced element unlike span for example which is an inline non-replaced element and we can define width/height on replaced element. Here is the relevant part of the specification that define how height/width should behave
-
-https://www.w3.org/TR/CSS2/visudet.html#inline-replaced-width
-
-https://www.w3.org/TR/CSS2/visudet.html#inline-replaced-height
-
-When it comes to non-replaced elements you will find this:
-
-The 'width' property does not apply. ref
-
-The 'height' property does not apply. ref
-
-Same logic apply to tranformation where we can apply transformation to img and not span.
-*/
-// =======================================================================================
-// why we use useEffect
-// =======================================================================================
-
-// =======================================================================================
-// if const is constant then how can we use it with setState to change variale value?
-// =======================================================================================
+    function payment(){
+        // logic for payment
+    }
+    // function checkout(payment: ):number {
+    //     payment()
+    // }
+    function getOrder(checkout){
+        let order = 1;
+        checkout()
+    }
 
 
-// =======================================================================================
-// event loop, different types of queues
-// =======================================================================================
+    Promise((ressolve, reject) => {
+        getOrder()
+        ressolve(2)
+    }).then((data) => {
+        checkout()
+        resolve(data)
+    }).then(() => {
+
+    }).catch((err) => {
+        reject()
+    })
+
+    const init = () => {
+        console.log('a');
+        fetchData()
+        console.log('b')
+    }
+    init();
+    let url = 'url'
+    const fetchData = async() => {
+        console.log('c')
+        try {
+            const data = await fetch(url)
+            console.log('data')
+        } catch (error) {
+            
+        }
+        console.log('d')
+    }
+
+    // a b c data d
+
+const [counter, setCounter] = useState(0)
+
+useEffect(() => {
+    console.log(counter);
+    // setCounter(counter + 3)
+    counter = 3
+    console.log(counter)
+}, [])
 
 
+const useUseCallbackHook = useCallBack(() => {
+    console.log('hello world');
+}, [])
 
 
+// useUseCallbackHook()
+// useUseCallbackHook()
 
+// expor default memo(child);
 
+// // Presnt 
+// const Parent () => {
+//     <button onClich= {handleclick}> <butoon></butoon>
+//     return (
 
+//     )
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// // Main - counter 
+// // ////// hcc prop-counter
