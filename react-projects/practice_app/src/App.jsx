@@ -1,7 +1,4 @@
-import ToggleEye from './components/password-toggle-eye/ToggleEye'
-import Container from './components/hoc/Container'
 import { Link } from 'react-router-dom'
-import ValidateFrom from './components/form-validation/pract'
 import Copy from './components/stepper/Copy'
 import PracticeComponent from './components/practice-component/PracticeComponent'
 
@@ -22,10 +19,7 @@ function App() {
       </div>
 
       <div className="mx-auto mt-4 w-1/3">
-        {/* <Container /> */}
         <Copy />
-        {/* <ValidateFrom /> */}
-        {/* <ToggleEye /> */}
         <PracticeComponent />
       </div>
     </div>
