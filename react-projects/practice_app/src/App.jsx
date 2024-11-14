@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Copy from './components/stepper/Copy'
 import PracticeComponent from './components/practice-component/PracticeComponent'
+import OTPContainer from './components/roadside_coder/mobile_otp/otp-container'
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
       </div>
 
       <div className="mx-auto mt-4 w-1/3">
-        <Copy />
-        <PracticeComponent />
+        {/* <Copy /> */}
+        {/* <PracticeComponent /> */}
+        <OTPContainer />
       </div>
     </div>
   )

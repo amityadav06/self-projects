@@ -1,0 +1,16 @@
+.otp-container{
+    margin: 0 auto;
+}
+h2{
+    font-size: 18px;
+}
+.otp-input-container{
+    display: flex;
+    gap: 8px;
+}
+.otp-input{
+    padding: 8px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
